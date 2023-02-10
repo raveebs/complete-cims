@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "cims-backend"
+		},
+		{
+			"path": "cims-frontend"
+		},
+		{
+			"path": "cims-core"
+		}
+	],
+	"settings": {}
+}

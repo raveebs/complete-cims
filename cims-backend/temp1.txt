@@ -1,0 +1,137 @@
+/*
+ axios
+      .get("http://localhost:8000/users/me", { withCredentials: true })
+      .then(function (response) {
+        const data = response.data;
+        setSessionState({
+          state: "logged_in",
+          user: {
+            id: data.id,
+            fname: data.fname,
+            lname: data.lname,
+            email: data.email,
+            avatar: "https://avatars.githubusercontent.com/u/53185091?v=4",
+          },
+          userAccountRoles: [
+            "platform_admin",
+            "account_admin",
+            "payroll_manager",
+            "contractor_manager",
+            "contractor",
+          ],
+        })
+       
+      });
+* */
+
+//const [sessionState, dispatch] = useReducer(sessionReducer, defaultUserState);
+
+//   const logoutHandler = () => {
+//     dispatch({ type: "logout" });
+//   };
+
+//   const setUser = () => {
+//     axios
+//       .get("http://localhost:8000/users/me", { withCredentials: true })
+//       .then(function (response) {
+//         dispatch({ type: "set-user", data: response.data });
+//       })
+//       .catch(function (error) {
+//         dispatch({ type: "logout" });
+//       });
+//   };
+
+//   let session: Session;
+
+//   if (sessionState.state === "logged_in") {
+//     session = {
+//       ...sessionState,
+//       logout: logoutHandler,
+//       switchAccount: () => {},
+//     };
+//   } else {
+//     session = {
+//       ...sessionState,
+//       setUser: setUser,
+//     };
+//   }
+//   return (
+//     <SesssionContext.Provider value={session}>
+//       {children}
+//     </SesssionContext.Provider>
+//   );
+// };
+
+// export default SessionProvider;
+
+// const userReducer = (state, action) => {
+
+//   if (action.type === "LOGIN") {
+//     // Todo
+//   }
+
+//   if (action.type === "LOGOUT") {
+//     // Todo
+//   }
+//   return defaultUserState;
+// };
+
+// case "field": {
+//   return {
+//     ...state,
+//     [action.fieldName]: action.payload,
+//   };
+// }
+
+/*
+    state: cookies["state"] ? cookies["state"] : "not_logged_in",
+    profile: {
+      id: 1,
+      fname: "Raveendra",
+      lname: "tudangil",
+      email: "raveendra.tudangil@bluecape.com",
+      avatar: "https://avatars.githubusercontent.com/u/53185091?v=4",
+    },
+    roles: [
+      "platform_admin",
+      "account_admin",
+      "payroll_manager",
+      "contractor_manager",
+      "contractor",
+    ],
+    cookies: cookies,
+    setCookie: setCookie,
+
+
+     axios
+              .get("http://localhost:8000/users/me", { withCredentials: true })
+              .then(function (response) {
+                console.log(response.data);
+                // newState = {
+                //   state: "logged_in",
+                //   user: {
+                //     id: "1",
+                //     fname: "Raveendra",
+                //     lname: "tudangil",
+                //     email: "raveendra.tudangil@bluecape.com",
+                //     avatar:
+                //       "https://avatars.githubusercontent.com/u/53185091?v=4",
+                //   },
+                //   account: { id: "1" },
+                  userAccountRoles: [
+                    "platform_admin",
+                    "account_admin",
+                    "payroll_manager",
+                    "contractor_manager",
+                    "contractor",
+                  ],
+                };
+                console.log("after", state, newState);
+              })
+              .catch(function (error) {
+                console.log(error);
+              });
+
+
+*/
+//const [cookies, setCookie] = useCookies(["state"]);

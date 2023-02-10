@@ -1,0 +1,15 @@
+{
+  "app_name": "CIMS",
+  "label_home": "Home",
+  "label_accounts": "Accounts",
+  "label_users": "Users",
+  "label_payroll": "Payroll",
+  "label_tasks": "Tasks",
+  "label_invoices": "Invoices",
+  "label_expenses": "Expenses",
+  "message_email_is_required": "Email is required.",
+  "message_password_is_required": "Password is required",
+  "message_something_went_wrong": "Something went wrong.",
+  "message_invalid_email_or_password": "Invalid email or password.",
+  "message_unauthorised": "You are not authorised to view this page."
+}
